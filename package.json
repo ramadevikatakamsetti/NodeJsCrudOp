@@ -1,0 +1,26 @@
+{
+  "name": "nodecrudoperationsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && nodemon dist/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cryptr": "^4.0.2",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.8",
+    "passport": "^0.4.0",
+    "validator": "^10.11.0"
+  }
+}
